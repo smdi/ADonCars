@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registration"
+    android:background="@color/white"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -66,7 +69,7 @@
 
 
                 <TextView
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_marginTop="@dimen/margin_20_dp"
                     android:textSize="18sp"
                     android:text="Create your account"
@@ -146,7 +149,7 @@
                             android:ellipsize="middle"
                             android:layout_centerHorizontal="true"
                             android:ems="10"
-                            android:hint="Re-enter password"
+                            android:hint="re-enter password"
                             android:textAlignment="center"
                             android:layout_marginTop="@dimen/margin_20_dp"
                             android:inputType="textPassword"
@@ -169,7 +172,7 @@
                             android:ellipsize="middle"
                             android:ems="10"
                             android:hint="mobile"
-                            android:inputType="text"
+                            android:inputType="number"
                             android:textSize="@dimen/text_size_15dp"
                             />
 
@@ -187,7 +190,7 @@
                             android:textAlignment="center"
                             android:ellipsize="middle"
                             android:ems="10"
-                            android:hint="Vehicle no"
+                            android:hint="vehicle no"
                             android:inputType="text"
                             android:textSize="@dimen/text_size_15dp"
                             />
@@ -205,7 +208,7 @@
                             android:textAlignment="center"
                             android:ellipsize="middle"
                             android:ems="10"
-                            android:hint="Vehicle model"
+                            android:hint="vehicle model"
                             android:inputType="text"
                             android:textSize="@dimen/text_size_15dp"
                             />
@@ -223,7 +226,7 @@
                             android:textAlignment="center"
                             android:ellipsize="middle"
                             android:ems="10"
-                            android:hint="Vehicle no"
+                            android:hint="location"
                             android:inputType="text"
                             android:textSize="@dimen/text_size_15dp"
                             />
@@ -266,6 +269,7 @@
                                     android:layout_height="wrap_content" />
 
                                 <TextView
+                                    android:id="@+id/login"
                                     android:layout_marginTop="10dp"
                                     android:textSize="16dp"
                                     android:paddingLeft="10dp"
