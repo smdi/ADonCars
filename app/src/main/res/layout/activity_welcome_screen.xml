@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen">
+
+
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_weight="1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+             <LinearLayout
+                 android:layout_centerInParent="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:paddingBottom="5dp"
+                     android:layout_gravity="bottom"
+                     android:textSize="25dp"
+                     android:textColor="@color/back1"
+                     android:text="ADonCars"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+                  <ImageView
+                      android:paddingRight="5dp"
+                      android:layout_marginRight="5dp"
+                      android:layout_marginLeft="5dp"
+                      android:src="@drawable/car"
+                      android:layout_width="48dp"
+                      android:layout_height="48dp" />
+
+
+             </LinearLayout>
+
+
+
+         </RelativeLayout>
+
+
+
+     </LinearLayout>
+
+
+
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:background="@drawable/topcut"
+             android:layout_weight="2"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <TextView
+                 android:layout_marginTop="25dp"
+                 android:textSize="20dp"
+                 android:textStyle="bold"
+                 android:textColor="@color/white"
+                 android:paddingLeft="20dp"
+                 android:text="Simple way to earn money !"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+             <TextView
+                 android:layout_marginTop="2dp"
+                 android:textSize="15dp"
+                 android:textStyle="bold"
+                 android:textColor="@color/white"
+                 android:paddingLeft="20dp"
+                 android:text="post ads and earn money"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+
+             <Button
+                 android:layout_marginTop="5dp"
+                 android:layout_marginLeft="20dp"
+                 android:paddingLeft="25dp"
+                 android:paddingRight="25dp"
+                 android:textAllCaps="false"
+                 android:textColor="@drawable/textcolor_pressed_unpressed"
+                 android:text="Get Started"
+                 android:background="@drawable/custom_design_pressed_unpressed_holder"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+
+
+
+
+         </LinearLayout>
+
+
+       <RelativeLayout
+           android:background="@color/colorPrimary"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_centerInParent="true"
+               android:background="@color/colorPrimary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <Button
+                   android:layout_marginBottom="3dp"
+                   android:layout_gravity="center"
+                   android:background="@color/white"
+                   android:layout_width="170dp"
+                   android:layout_height="5dp" />
+
+           </LinearLayout>
+
+
+       </RelativeLayout>
+
+
+
+
+ </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
