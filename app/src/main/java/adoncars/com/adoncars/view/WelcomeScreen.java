@@ -44,7 +44,7 @@ public class WelcomeScreen extends AppCompatActivity {
         if(fragment!=null)
         {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.welcomescreen, fragment);
+            ft.replace(R.id.welcomescreen, fragment).addToBackStack("tag");
             ft.commit();
             return  true;
         }

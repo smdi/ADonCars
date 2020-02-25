@@ -19,7 +19,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class FogotPasswordFragment extends Fragment {
 
     private TextView signup;
-    private EditText email;
+    private EditText mobile;
     private Button send;
 
     @Nullable
@@ -42,7 +42,7 @@ public class FogotPasswordFragment extends Fragment {
 
         signup = (TextView) view.findViewById(R.id.signup);
 
-        email = (EditText) view.findViewById(R.id.email);
+        mobile = (EditText) view.findViewById(R.id.mobileno);
 
         send = (Button) view.findViewById(R.id.send);
 
@@ -66,14 +66,14 @@ public class FogotPasswordFragment extends Fragment {
 
     private void validations() {
 
-        String mail = email.getText().toString();
+        String mail = mobile.getText().toString();
 
-        if(mail.length() > 0 && Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
+        if(mail.length() > 0 && Patterns.PHONE.matcher(mail).matches()){
 
             //code to process
         }
         else {
-            email.setError("Invalid email id");
+            mobile.setError("Invalid mobile number");
         }
 
     }
