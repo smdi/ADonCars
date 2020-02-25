@@ -10,6 +10,7 @@ import adoncars.com.adoncars.R;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 
 public class RegistrationFragment extends Fragment {
@@ -33,10 +34,24 @@ public class RegistrationFragment extends Fragment {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().popBackStackImmediate();
+               loadFragment(new LoginFragment());
             }
         });
     }
+
+    public boolean loadFragment(Fragment fragment)
+    {
+        if(fragment!=null)
+        {
+            FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.registration, fragment).addToBackStack("tag");
+            ft.commit();
+            return  true;
+        }
+        return false;
+
+    }
+
 
 
 }
