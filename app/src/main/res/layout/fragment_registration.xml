@@ -261,7 +261,7 @@
                                     android:textSize="16dp"
                                     android:paddingLeft="10dp"
                                     android:paddingRight="5dp"
-                                    android:textColor="@color/colorAccent"
+                                    android:textColor="@color/black"
                                     android:layout_marginRight="5dp"
                                     android:layout_gravity="right"
                                     android:text="I have an account?"
