@@ -1,10 +1,11 @@
 package adoncars.com.adoncars.view;
 
-import android.os.Build;
+import android.media.MediaPlayer;
+
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
+
 import android.widget.Button;
 
 import adoncars.com.adoncars.R;
@@ -31,7 +32,7 @@ public class WelcomeScreen extends AppCompatActivity {
         getstarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startplayer();
                 loadFirstFragment(new LoginFragment());
 
             }
@@ -60,5 +61,11 @@ public class WelcomeScreen extends AppCompatActivity {
         } else {
             getSupportFragmentManager().popBackStack();
         }
+    }
+
+    private void startplayer() {
+
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext() ,R.raw.knock);
+        mp.start();
     }
 }

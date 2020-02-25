@@ -1,5 +1,6 @@
 package adoncars.com.adoncars.view;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.LayoutInflater;
@@ -55,6 +56,7 @@ public class RegistrationFragment extends Fragment {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startplayer();
                 validations();
             }
         });
@@ -64,6 +66,7 @@ public class RegistrationFragment extends Fragment {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startplayer();
                 loadFragment(new LoginFragment());
             }
         });
@@ -154,6 +157,12 @@ public class RegistrationFragment extends Fragment {
         }
         return false;
 
+    }
+
+    private void startplayer() {
+
+        final MediaPlayer mp = MediaPlayer.create(getActivity() ,R.raw.knock);
+        mp.start();
     }
 
 

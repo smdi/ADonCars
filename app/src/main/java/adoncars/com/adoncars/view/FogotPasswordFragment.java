@@ -1,5 +1,6 @@
 package adoncars.com.adoncars.view;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.LayoutInflater;
@@ -49,6 +50,7 @@ public class FogotPasswordFragment extends Fragment {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startplayer();
                 loadFragment(new RegistrationFragment());
             }
         });
@@ -57,6 +59,7 @@ public class FogotPasswordFragment extends Fragment {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startplayer();
                 validations();
             }
         });
@@ -90,6 +93,11 @@ public class FogotPasswordFragment extends Fragment {
         }
         return false;
 
+    }
+    private void startplayer() {
+
+        final MediaPlayer mp = MediaPlayer.create(getActivity() ,R.raw.knock);
+        mp.start();
     }
 
 }
