@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "797929693698",
+    "firebase_url": "https://adoncars-b76a5.firebaseio.com",
+    "project_id": "adoncars-b76a5",
+    "storage_bucket": "adoncars-b76a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797929693698:android:f5f0fbc1b1010d93527d1b",
+        "android_client_info": {
+          "package_name": "adoncars.com.adoncars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797929693698-6btenfvgl05j3tip0k1dus4vjctgsnjb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "adoncars.com.adoncars",
+            "certificate_hash": "8b104025ada9728f2734b5fa1161e923a30afb3a"
+          }
+        },
+        {
+          "client_id": "797929693698-36c6o0j8fdr1ome6661fu5q2h6kej6h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLmjP0k1B39ViE0QV5RA2D5Fbgd5PbjSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797929693698-36c6o0j8fdr1ome6661fu5q2h6kej6h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

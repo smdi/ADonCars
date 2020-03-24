@@ -8,14 +8,20 @@ import android.view.View;
 
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import adoncars.com.adoncars.R;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 public class WelcomeScreen extends AppCompatActivity {
 
     private Button getstarted;
+    private FirebaseAuth auth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,20 +33,27 @@ public class WelcomeScreen extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        getstarted = (Button) findViewById(R.id.getstarted);
+        auth = FirebaseAuth.getInstance();
 
-        getstarted.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startplayer();
-                loadFirstFragment(new LoginFragment());
+        if (auth.getCurrentUser() != null) {
+            loadFragment(new RegistrationFragment());
+        }
+        else{
+            getstarted = (Button) findViewById(R.id.getstarted);
 
-            }
-        });
+            getstarted.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startplayer();
+                    loadFragment(new LoginFragment());
+
+                }
+            });
+        }
 
     }
 
-    public boolean loadFirstFragment(Fragment fragment){
+    public boolean loadFragment(Fragment fragment){
 
         if(fragment!=null)
         {
